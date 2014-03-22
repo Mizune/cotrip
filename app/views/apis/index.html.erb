@@ -34,4 +34,11 @@
 
 <br>
 
+<% if current_user == nil %>
+   <%= link_to 'ログアウト', login_path %>
+<% else %>
+  <%= link_to 'ログアウト', login_path, :confirm => 'ログアウトしますか？', :method => :delete %>
+<% end %>
+
+
 <%= link_to 'New Api', new_api_path %>

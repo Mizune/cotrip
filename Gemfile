@@ -8,6 +8,11 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'simple_form'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
@@ -49,3 +54,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'less-rails'
+
+gem 'devise'

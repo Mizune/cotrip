@@ -1,6 +1,6 @@
 class ApisController < ApplicationController
   before_action :set_api, only: [:show, :edit, :update, :destroy]
-
+  before_action :logged_in?
   # GET /apis
   # GET /apis.json
   def index
