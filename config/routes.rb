@@ -1,6 +1,7 @@
 CoTrip::Application.routes.draw do
   root "top#index"
   get "apis/get"
+  get "plans/get"
   resources :apis
   resource :login
 
