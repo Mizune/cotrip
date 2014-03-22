@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plan:</strong>
+  <%= @api.plan_id %>
+</p>
+
+<p>
+  <strong>Coupon flag:</strong>
+  <%= @api.coupon_flag %>
+</p>
+
+<p>
+  <strong>Coupon limit:</strong>
+  <%= @api.coupon_limit %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @api.name %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @api.image_url %>
+</p>
+
+<p>
+  <strong>Discription:</strong>
+  <%= @api.discription %>
+</p>
+
+<%= link_to 'Edit', edit_api_path(@api) %> |
+<%= link_to 'Back', apis_path %>

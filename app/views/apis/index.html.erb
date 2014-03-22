@@ -1,0 +1,37 @@
+<h1>Listing apis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plan</th>
+      <th>Coupon flag</th>
+      <th>Coupon limit</th>
+      <th>Name</th>
+      <th>Image url</th>
+      <th>Discription</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @apis.each do |api| %>
+      <tr>
+        <td><%= api.plan_id %></td>
+        <td><%= api.coupon_flag %></td>
+        <td><%= api.coupon_limit %></td>
+        <td><%= api.name %></td>
+        <td><%= api.image_url %></td>
+        <td><%= api.discription %></td>
+        <td><%= link_to 'Show', api %></td>
+        <td><%= link_to 'Edit', edit_api_path(api) %></td>
+        <td><%= link_to 'Destroy', api, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Api', new_api_path %>
